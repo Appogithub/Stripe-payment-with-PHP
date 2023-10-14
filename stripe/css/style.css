@@ -1,0 +1,109 @@
+.payment-form-container
+{
+position:relative !important;
+float:left !important;
+width:100% !important;
+margin-top:0px !important;
+background:rgb(255,255,255) !important;
+padding:20px;
+border-radius:15px !important;
+overflow:hidden;
+}
+@media screen and (max-width: 760px)
+{
+.payment-form-container
+{
+margin-top:40px !important;	
+}
+}
+.payment-form-container .payment-icon-style
+{
+width:200px !important;
+margin-bottom:20px !important;	
+}
+input#cardholder-name
+{
+width:90%;
+padding:15px !important;
+border:1px solid rgba(0,0,0,0.1);
+border-radius:15px;
+margin:0px !important;
+margin-bottom:15px !important;	
+}
+input#cardholder-name::placeholder,
+input#cardholder-name::-webkit-input-placeholder,
+input#cardholder-name:-moz-placeholder
+{
+color: rgba(0,0,0,0.4) !important;
+}
+#card-elements
+{
+margin-top:10px !important;
+}
+.CardField 
+{
+color:red !important;	
+}
+#card-errors
+{
+color:rgb(217,83,79);	
+}
+#errors
+{
+color:rgb(217,83,79);
+}
+.payment-btn
+{
+width:100% !important;	
+background:rgb(90,183,93) !important;
+color:white !important;
+width:100% !important;
+padding:15px 30px !important;
+border:0px solid transparent !important;
+border-radius:15px !important;
+font-weight:bold !important;
+font-size:15px !important;
+color:white !important;
+cursor:pointer !important;
+}
+.payment-btn:hover
+{
+background:rgb(60,153,63) !important;
+}
+#spiner-container
+{
+position:absolute;
+width:100%;
+height:100%;
+z-index:12000;
+background:rgba(0,0,0,0.05);
+display:none;
+left:0px !important;
+top:0px !important;
+}
+.lds-dual-ring {
+position:absolute;
+left:calc(50% - 30px);
+top:calc(50% - 30px);
+width: 60px;
+height: 60px;
+}
+.lds-dual-ring:after {
+content: " ";
+display: block;
+width: 50px;
+height: 50px;
+margin: 5px;
+border-radius: 50%;
+border: 6px solid transparent;
+border-color: red transparent blue transparent;
+animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
